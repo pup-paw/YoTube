@@ -1,0 +1,55 @@
+header {
+  background-color: rgb(55, 55, 55);
+}
+
+header > input {
+  height: 30px;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+input.l-btn {
+  margin: 10px 0 5px 10px;
+}
+input#logo {
+  margin: 10px 0 5px 0;
+}
+input.r-btn {
+  margin: 10px 10px 50px 0;
+  float: right;
+}
+
+video {
+  width: 100%;
+}
+
+section.information {
+}
+
+div.hashtags {
+  color: rgb(50, 100, 200);
+}
+
+div.title {
+  width: 95%;
+  height: 100px;
+  float: left;
+}
+
+div.drop-down {
+  width: 5%;
+  height: 100px;
+  float: right;
+}
+
+input.drop-down-icon {
+  width: 15px;
+}
+
+div.button {
+  width: 100%;
+}
+
+input.btn {
+  width: 15%;
+}
