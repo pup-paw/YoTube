@@ -1,0 +1,193 @@
+:root {
+  /*color*/
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /*size*/
+  --padding: 12px;
+  --avatar-size: 36px;
+
+  /*font size*/
+  --font-large: 20px;
+  --font-medium: 18px;
+  --font-small: 16px;
+  --font-micro: 12px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gaegu", cursive;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+button :focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--white-color);
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+header div.logo {
+  font-size: var(--font-large);
+}
+
+.logo i.fa-paw {
+  color: var(--red-color);
+}
+
+.icons.fa-search {
+  margin-right: var(--padding);
+}
+
+/*player*/
+section.player {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: var(--black-color);
+}
+
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+/*video info*/
+section.info {
+  padding: var(--padding);
+}
+
+.hashtags {
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+}
+
+.hashtags li {
+  margin-right: var(--padding);
+}
+
+.title-button {
+  display: flex;
+}
+
+.title {
+  font-size: var(--font-medium);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-right: var(--padding);
+}
+
+.moreBtn {
+  height: 100%;
+}
+
+.views,
+.date {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--padding) 0;
+}
+
+.actions button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  font-family: "Gaegu", cursive;
+  color: var(--grey-dark-color);
+}
+
+.actions button i {
+  margin: 0 auto;
+  margin-bottom: calc(var(--padding) / 2);
+  font-size: 16px;
+}
+
+.actions button i.active {
+  color: var(--blue-color);
+}
+
+.actions button i:hover {
+  color: var(--blue-color);
+}
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+  padding-top: calc(var(--padding) / 2);
+}
+
+.c-metadata {
+  display: flex;
+  align-items: center center;
+}
+
+.c-metadata img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  margin-right: var(--padding);
+}
+
+.p-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: var(--font-medium);
+}
+
+.subscribers {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.subscribe {
+  text-transform: uppercase;
+  font-family: "Gaegu", cursive;
+  color: var(--red-color);
+}
+
+/*up next*/
+.upNext {
+  padding: 0 var(--padding);
+}
+
+.next-title {
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin-bottom: var(--padding);
+}

@@ -5,50 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 
     <title>YoTube</title>
+
+    <script src="https://kit.fontawesome.com/fdf00f6002.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!--Header-->
     <header>
-        <input class="l-btn" type="image" src="images/favicon.png">
-        <input class="l-btn" type="image" src="images/logo.png" id="logo">
-        <input class="r-btn" type="image" src="images/search.png">
-        <input class="r-btn" type="image" src="images/white-view-more.png">
+        <div class="logo">
+            <i class="fas fa-paw"></i>
+            <span class="title-name">YoTube</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
     </header>
-    <section class="play-video">
-        <video src="videos/sleeping-yokie.mp4"></video>
+
+    <!--Video Player-->
+    <section class="player">
+        <video controls src="videos/sleeping-yokie.mp4"></video>
     </section>
-    <section class="information">
-        < id="video-info">
-            <div class="hashtags">#SleepingDog #Lovely #Yokie</div>
-            <div class="title">
-                Yokie's Vlog🐾 : Sleeping Yokie😴 잠자는데 눈나가 토닥토닥 해줘서 기분이 좋아💜 | 12살 요캥이의 일기📓
+
+    <!--Information-->
+    <section class="info">
+        <div class="metadata">
+            <ul class="hashtags">
+                <li>#SleepingDog</li>
+                <li>#SweetDream</li>
+                <li>#Yokie</li>
+            </ul>
+            <div class="title-button">
+                <span class="title">
+                    Yokie's Vlog🐾 : Sleeping Yokie😴 잠자는데 눈나가 토닥토닥 해줘서 기분이 좋아💜 나는야 행복한 꼬질꼬질 털뭉치🧶 | 12살 요캥이의 일기📓
+                </span>
+                <button class="moreBtn">
+                    <i class="fas fa-caret-down"></i>
+                </button>
             </div>
-            <div class="drop-down">
-              <input class="drop-down-icon" type="image" src="images/drop-down-icon.png"></input>
+            <span class="views">조회수 10회 |</span>
+            <span class="date">| 2020. 1.18.</span>
+        </div>
+        <!--actions-->
+        <ul class="actions">
+            <li><button><i class="active fas fa-thumbs-up"></i><span>10</span></button></li>
+            <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+            <li><button><i class="fas fa-share"></i><span>share</span></button></li>
+            <li><button><i class="fas fa-download"></i><span>download</span></button></li>
+            <li><button><i class="fas fa-bookmark"></i><span>bookmark</span></button></li>
+        </ul>
+        <!--Channel Description-->
+        <div class="channel">
+            <div class="c-metadata">
+                <img src="images/p-icon.jpg">
+                <div class="p-info">
+                    <span class="name">요캥이의 일기</span>
+                    <span class="subscribers">10 subscibers</span>
+                </div>
             </div>
-            <div class="small-info"><span class="view">조회수 10회 |</span><span id="date">| 2020. 1.18.</span></div>
-            <div class="button">
-                <input type="image" class="btn" src="images/thumb-up.png">
-                <input type="image" class="btn" src="images/thumb-down.png">
-                <input type="image" class="btn" src="images/share.png">
-                <input type="image" class="btn" src="images/download.png">
-                <input type="image" class="btn" src="images/save.png">
-                <div id="youtuber-info"><input type="text" id="p-icon"><span id="p-info"><span id="name"></span><span class="small-info"></span><span id="subscribe"></span></span></div>
-            </div>
+            <button class="subscribe">subscribe</button>
         </div>
     </section>
-    <section class="playlist">
-        <article id="next-video">
-            <span id="sumnail"></span>
-            <p id="title-info">
-                <span class="title"></span>
-                <div class="small-info"></div>
-                <div class="small-info"></div>
-            </p>
-            <input type="text" class="view-more">
-        </article>
+
+    <section class="upNext">
+        <span class="next-title">Up next</span>
+        <ul>
+            <li class="item">
+                <img src="images/bear-sumnail.png" alt="">
+                <div class="info">
+                    <span class="title">Yokie's Vlog🐾 : sleeping-yokie😴 잠자는데 눈나가 바람 불어서 귀가 팔랑💨 (feat. 곰돌이 귀🐻) | 12살 요캥이의 일기📓</span>
+                    <span class="name">요캥이의 일기</span>
+                    <span class="views">10 views</span>
+                </div>
+                <button class="more"></button>
+            </li>
+            <li class="item">
+                <img src="images/bear-sumnail.png" alt="">
+                <div class="info">
+                    <span class="title">Yokie's Vlog🐾 : sleeping-yokie😴 잠자는데 눈나가 바람 불어서 귀가 팔랑💨 (feat. 곰돌이 귀🐻) | 12살 요캥이의 일기📓</span>
+                    <span class="name">요캥이의 일기</span>
+                    <span class="views">10 views</span>
+                </div>
+                <button class="more"></button>
+            </li>
+            <li class="item">
+                <img src="images/bear-sumnail.png" alt="">
+                <div class="info">
+                    <span class="title">Yokie's Vlog🐾 : sleeping-yokie😴 잠자는데 눈나가 바람 불어서 귀가 팔랑💨 (feat. 곰돌이 귀🐻) | 12살 요캥이의 일기📓</span>
+                    <span class="name">요캥이의 일기</span>
+                    <span class="views">10 views</span>
+                </div>
+                <button class="more"></button>
+            </li>
+        </ul>
     </section>
 </body>
 </html>
